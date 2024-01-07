@@ -1,2 +1,2 @@
 # Programming-Fundamentals
-This is a repository for a SoftUni Fundamental course
+In this repository contains fundamental knowledge in Python!🐍
