@@ -1,4 +1,4 @@
-Here are the terms of the tasks: [Terms](https://github.com/zahariev-webbersof/python-fundamentals-01-2024/blob/main/Basic%20Syntax.md)
+Here are the terms of the tasks: (https://github.com/zahariev-webbersof/python-fundamentals-01-2024/blob/main/Basic%20Syntax.md)
 
 1: D
 2: A
