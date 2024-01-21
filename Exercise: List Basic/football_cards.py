@@ -1,23 +1,19 @@
-team_information = input()
+team_A = ["A-1", "A-2", "A-3", "A-4", "A-5", "A-6", "A-7", "A-8", "A-9", "A-10", "A-11"]
+team_B = ["B-1", "B-2", "B-3", "B-4", "B-5", "B-6", "B-7", "B-8", "B-9", "B-10", "B-11"]
+game_was_terminated = False
+players = input().split()
 
-team_a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-team_b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-team_list = team_information.split(" ")
+for player in players:
+    if player in team_A:
+        team_A.remove(player)
+    elif player in team_B:
+        team_B.remove(player)
 
-for letter in team_list:
-
-    if letter[0] == "A":
-        if int(letter[2:]) in team_a:
-            team_a.remove(int(letter[2:]))
-
-    elif letter[0] == "B":
-        if int(letter[2:]) in team_b:
-            team_b.remove(int(letter[2:]))
-
-    if len(team_a) < 7 or len(team_b) < 7:
+    if len(team_A) < 7 or len(team_B) < 7:
+        game_was_terminated = True
         break
 
-print(f"Team A - {len(team_a)}; Team B - {(len(team_b))}")
+print(f"Team A - {len(team_A)}; Team B - {len(team_B)}")
 
-if len(team_a) < 7 or len(team_b) < 7:
+if game_was_terminated == True:
     print("Game was terminated")
